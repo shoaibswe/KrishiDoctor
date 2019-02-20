@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/krishi"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="কৃষি ডাক্তারে আপনাকে স্বাগতম!"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <ImageView
+        android:textAlignment="center"
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/lg1" />
+
+    <View
+        android:paddingTop="20dp"
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingBottom="10sp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:background="@color/trns"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:text="@string/AppDesc" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/grs">
+
+        <Button
+            android:id="@+id/btnkrishok"
+            android:text="কৃষক লগইন করুন"
+            android:layout_marginTop="5dp"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnofficer"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sky"
+            android:text="অফিসার লগইন"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
